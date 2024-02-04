@@ -13,7 +13,7 @@ export async function getStaticProps({params}){
     };
 }
 
-export async function getStaticPaths(){
+export async function getStaticPaths(){//動的ルートの時getStaticPropsを使う時はパスリストの定義が必要。
     const paths=getAllPostIds();
     return {
         paths,
